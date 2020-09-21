@@ -1,0 +1,123 @@
+.form{
+position: fixed;
+bottom:30px;
+width: 100%;
+}
+.array-box{
+text-align: center;
+margin-top: 15px;
+margin-bottom: 5px;
+}
+.bars{
+  background: GREEN;
+
+ display: inline-block;
+
+ border-radius: 4px;
+}
+body {
+  background-color: #28293d;
+  color: #fff;
+  width: 100%;
+   height: 100%;
+   overflow: hidden;
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   font-family: 'Open Sans Condensed', sans-serif;
+ }
+.button {
+  margin-top: 5px;
+  margin-right: 20px;
+	color: #fff;
+	transition: all 0.5s;
+	position: relative;
+
+  	height: 35px;
+  	text-align: center;
+  	width: 130px;
+  	cursor: pointer;
+background-color: #341677;
+}
+.button::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+		background-color: rgba(255,255,255,0.1);
+	transition: all 0.3s;
+}
+.button:hover::before {
+	opacity: 0 ;
+	transform: scale(0.5,0.5);
+}
+.button::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	opacity: 0;
+	transition: all 0.3s;
+	border: 1px solid rgba(255,255,255,0.5);
+	transform: scale(1.2,1.2);
+}
+.button:hover::after {
+	opacity: 1;
+	transform: scale(1,1);
+}
+.Tools{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.range1{
+  margin:20px 40px 0px 20px;
+  -webkit-appearance:none;
+  appearance:none;
+  height: 10px;
+  background: #d3d3d3;
+  opacity: 0.7;
+  -webkit-transition:.2s;
+  transition: opacity .2s;
+  border-radius: 5px;
+  outline:none;
+}
+.range1:hover{
+  opacity:1;
+}
+.range1::-moz-range-thumb{
+  background:#461B79 ;
+border-radius: 50%;
+outline:none;
+}
+.speed{
+  margin:20px 40px 0px 20px;
+  -webkit-appearance:none;
+  appearance:none;
+  height: 10px;
+  background: #d3d3d3;
+  opacity: 0.7;
+  -webkit-transition:.2s;
+  transition: opacity .2s;
+  border-radius: 5px;
+  outline:none;
+}
+.speed:hover{
+  opacity:1;
+}
+.speed::-moz-range-thumb{
+  background:#461B79 ;
+border-radius: 50%;
+outline:none;
+}
+.para{
+  display: flex;
+  margin-right: 10px;
+}
